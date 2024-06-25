@@ -10,7 +10,7 @@ const Navbar = () => {
       <Link className={styles.button} href={"/projects"}>
         Projects
       </Link>
-      <Link className={styles.button} href={"/widgetTypes"}>
+      <Link className={styles.button} href={"/widget Types"}>
         WidgetTypes
       </Link>
     </nav>
