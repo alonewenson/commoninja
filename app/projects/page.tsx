@@ -5,10 +5,9 @@ import Layout from "../components/layout/layout";
 
 const Projects = async () => {
   const projects: Project[] = await fetchFromCommonNinja("projects");
-
   return (
     <Layout>
-      <List items={projects} title="Projects" />
+      <List items={projects} linkRoute="projects"/>
     </Layout>
   );
 };

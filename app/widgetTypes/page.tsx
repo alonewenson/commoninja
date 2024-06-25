@@ -8,7 +8,7 @@ const WidgetTypes = async () => {
 
   return (
     <Layout>
-      <List items={widgetTypes} title="Widget Types"/>
+      <List items={widgetTypes} />
     </Layout>
   );
 };

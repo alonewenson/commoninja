@@ -6,11 +6,10 @@ import Item from "./item";
 
 interface ListProps {
   items: ItemProps[];
-  title: string;
   linkRoute?: string;
 }
 
-const List: FC<ListProps> = ({ items, title, linkRoute }) => {
+const List: FC<ListProps> = ({ items, linkRoute }) => {
   return (
     <div>
       <ul className={styles.list}>

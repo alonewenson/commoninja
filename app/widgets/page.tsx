@@ -3,12 +3,13 @@ import { Widget } from "@/types";
 import List from "../components/itemList/list";
 import Layout from "../components/layout/layout";
 
-const Widgets = async () => {
-  const widgets: Widget[] = await fetchFromCommonNinja("widgets");
+const Widgets = async ({ projetId }: { projetId?: string }) => {
+  const url = projetId ? `widgets?projectId=${projetId}` : "widgets";
+  const widgets: Widget[] = await fetchFromCommonNinja(url);
 
   return (
     <Layout>
-      <List items={widgets} title="Widgets" linkRoute="widgets" />
+      <List items={widgets} linkRoute="widgets" />
     </Layout>
   );
 };

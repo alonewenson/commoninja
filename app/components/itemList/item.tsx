@@ -11,7 +11,7 @@ export interface ItemProps {
   created?: string;
 }
 
-const Item : FC<ItemProps> = ({ name, projectId, logo, status, created }) => {
+const Item: FC<ItemProps> = ({ name, projectId, logo, status, created }) => {
   return (
     <div>
       {logo && (
@@ -24,13 +24,9 @@ const Item : FC<ItemProps> = ({ name, projectId, logo, status, created }) => {
         />
       )}
       <p className={styles.name}>{name}</p>
-      {projectId && (
-        <p className={styles.detail}>Project ID: {projectId}</p>
-      )}
+      {projectId && <p className={styles.detail}>Project ID: {projectId}</p>}
       {status && <p className={styles.detail}>Status: {status}</p>}
-      {created && (
-        <p className={styles.detail}>Created At: {created}</p>
-      )}
+      {created && <p className={styles.detail}>Created At: {created}</p>}
     </div>
   );
 };
