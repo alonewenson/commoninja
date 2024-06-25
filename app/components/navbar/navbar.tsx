@@ -10,8 +10,8 @@ const Navbar = () => {
       <Link className={styles.button} href={"/projects"}>
         Projects
       </Link>
-      <Link className={styles.button} href={"/widget Types"}>
-        WidgetTypes
+      <Link className={styles.button} href={"/widgetTypes"}>
+        Widget Types
       </Link>
     </nav>
   );
